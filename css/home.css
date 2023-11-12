@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'More Sugar', sans-serif;   
+    text-decoration: none;                       
+}
+
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #F17E3D ;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0,0, .2);
+    position: relative;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    margin-bottom: 12px;
+   
+}
+
+.nav {
+    display:flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.nav .titulo h1{
+    font-size: 30px;
+    color:#524643 ;
+    border-bottom: medium solid #F3F1EE;
+}
+
+.nav .titulo{
+    margin-left: 15px;
+}
+.enlaces-header{
+    display: none;
+    font-weight: 300;
+    margin: auto;
+    transition: all ease-in-out .6s;
+}
+
+.nav .enlaces-header a {
+    color:#fff;
+    text-decoration:none ;
+    padding: 12px;
+    border-radius: 10px;
+
+}
+.nav .enlaces-header a:hover {
+    color:#F3F1EE;
+    background-color: #FF0000;
+    border-color: antiquewhite;
+    transition: all ease-in-out .3s;
+
+}
+
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    display: none;
+    z-index: 100;
+    position: absolute;
+    right: 0;
+}
+
+.hamburguer > i{
+    font-size: 25px;
+    line-height: 80px;
+}
+
+.enlaces-header{
+    position: relative;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #524643 ;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    
+    clip-path: circle(0.0% at 0 0);
+}
+.nav .enlaces-header a{
+    text-align: center;
+    color: #F3F1EE;
+    text-transform: uppercase;
+    font-weight: 20px;
+    width: 50%;
+    background-color:#FF0000 ;
+}
+
+.enlaces-header .logo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+}
+
+.nav .enlaces-header .img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom:20px ;
+    margin-left: 10px;
+    
+}
+
+.nav .enlaces-header .img >i{
+    font-size: 90px;
+    line-height: 80px;
+   
+}
+
+.nav .hamburgueropen{
+    clip-path: circle(150% at 0 0);
+}
+
+.nav .enlaces-header a:hover{
+    color: #747371;
+    background-color: #fff;
+}
+
+.hamburguer{
+    display: block;
+}
+
+
+
+
+/* ################ SECTION 1 */
+
+
+.contenedor-section{
+   width: 100%;
+   padding-top: 10px;
+}
+
+.contenedor-section .contenido-section{
+    max-width: 360px;
+    background-color:#F3F1EE ;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.contenido-section h2{
+    font-size: 40px;
+    margin-bottom: 12px;
+    
+}
+.informacion{
+    padding: 8px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contenido-section .informacion p{
+    font-size: small;
+
+}
+
+.contenido-section .imagenes .img1 {
+    width: 40%;
+    margin: 12px 12px;
+}
+.contenido-section .imagenes .img1 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.contenido-section .imagenes .img2 img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+/* ############ section2 ##############3 */
+
+.contenedor-section2{
+    width: 100%;
+    padding-top: 10px;
+ }
+
+.contenedor-section2 .contenido-section2{
+    max-width: 360px;
+    background-color:#F3F1EE ;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 12px;
+    text-align: center;
+}
+
+.contenedor-section2 .titulo-section{
+    background-color: #524643;
+    padding: 8px 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.contenedor-section2 .titulo-section p{
+    color:#F3F1EE ;
+    font-size: 20px;
+}
+.contenedor-section2 .titulo-section span{
+    color:#F3F1EE ;
+    font-size: 15px;
+}
+
+
+.contenedor-informacion .informacion-section i,p{
+    margin-left: 10px;
+}
+
+.contenedor-informacion .informacion-section .text{
+    display: flex;
+ align-items: center;
+ margin-top: 8px;
+ margin-bottom: 8px;
+}
+
+.contenedor-informacion .informacion-section .text p{
+    font-size: larger;
+    font-weight: 300;
+}
+
+
+/* ############## footer ################### */
+
+.contenedor-footer{
+    background-color: #F17E3D;
+    margin-top: 15px;
+    
+}
+
+.contenedor-footer .contenido-footer{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+    
+    
+}
+
+.contenedor-footer .contenido-footer .logo-footer img{
+    width: 160px;
+    height: 140px;
+}
+
+
+.contenedor-footer .contenido-footer .contacto{
+    width: 55%;
+    
+}
+.contenedor-footer .contenido-footer .contacto p{
+    font-size: 30px;
+    color: #524643;
+}
+
+.contenedor-footer .contenido-footer .contacto .redes{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 6px;
+    
+}
+
+.contenedor-footer .contenido-footer .contacto .redes .social{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.contenedor-footer .contenido-footer .contacto .redes .social i{
+    
+    margin-right: 4px;
+    font-size: 12px;
+    margin-bottom: 8px;
+    
+    
+}
+
+.contenedor-footer .contenido-footer .contacto .redes .social p{
+    
+    font-size: small;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+/* paleta de colores
+
+#000000 negro
+#FF0000 ROJO
+#F17E3D NARANJA
+#F3F1EE BLANCO BACANO
+#FFFFFF BLANCO
+#747371 GRIS
+#524643 CAFE
+
+*/
