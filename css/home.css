@@ -183,6 +183,11 @@ nav{
 
 }
 
+.contenido-section .imagenes{
+    width: 100%;
+    padding-bottom: 12px;
+}
+
 .contenido-section .imagenes .img1 {
     width: 40%;
     margin: 12px 12px;
@@ -291,12 +296,9 @@ nav{
 .contenedor-footer .contenido-footer{
    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-   
-    
-    
-    
+ 
 }
 
 .contenedor-footer .contenido-footer .logo-footer img{
@@ -306,7 +308,7 @@ nav{
 
 
 .contenedor-footer .contenido-footer .contacto{
-    width: 55%;
+    width: 40%;
     
 }
 .contenedor-footer .contenido-footer .contacto p{
@@ -345,6 +347,101 @@ nav{
 
 
 
+/* ################# media querys ############# */
+
+
+
+@media  (min-width: 800px){
+
+        /* ############ SECTION 1 ###############3 */
+
+
+         
+         .contenedor-section .contenido-section{
+             max-width: 700px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+         }
+         
+         .contenido-section .informacion{
+            width: 40%;
+         }
+         
+         .contenido-section .imagenes{
+             width: 50%;
+             padding-bottom: 12px;
+         }
+         
+        
+         .contenido-section .imagenes .img1 img{
+             width: 140px;
+             height: 140px;
+           
+         }
+         
+         .contenido-section .imagenes .img2 img{
+             width: 100px;
+             height: 100px;
+             
+         }
+
+         /*######### SECTION2 ############## */
+       
+         .contenedor-section2{
+            margin-top: 30px;
+        }
+        
+        .contenedor-section2 .contenido-section2{
+            max-width: 700px;
+        }
+        
+        .contenedor-informacion {
+
+            padding-bottom: 12px;
+            
+        }
+
+        /* ############### SECTION 3 ################## */
+
+        .contenedor-section3{
+            margin-top: 50px;
+            height: 300px;
+        }
+        .contenedor-section3 .contenido-section3{
+            max-width: 700px;
+            display: flex;
+            height: 250px;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .contenido-section3 p{
+            width: 60%;
+           
+        }
+
+         /* ########### footer ##########33 */
+
+
+         .contenedor-footer .contenido-footer{
+   
+         
+            justify-content: space-between;
+            
+         
+        }
+
+        
+        .contenedor-footer .contenido-footer .contacto{
+            width: 30%;
+    
+        }
+
+
+
+}
+    
 
 
 
