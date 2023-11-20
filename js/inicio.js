@@ -7,17 +7,20 @@ function validarFormulario() {
     const correoValido = validarCorreo(correo);
     const contraseñaValida = validarContraseña(contraseña);
 
-    
-    if (correoValido && contraseñaValida) {
-        
+    const correoRegistrado = localStorage.getItem('correo');
+    const contraseñaRegistrada = localStorage.getItem('contraseña');
+
+    if (correo === correoRegistrado && contraseña === contraseñaRegistrada && correoValido && contraseñaValida) {
+        // Si los datos coinciden, redirigir a la página de inicio
         window.location.href = 'home.html';
+        alert('¡Inicio de sesión exitoso!');
     } else {
         // Mostrar mensaje de error según la situación
         var mensajeError = document.getElementById('mensaje-error');
 
-        if (!correoValido && !contraseñaValida) {
+        if (!correoValido && !contraseñaValida || !correoRegistrado &&  contraseñaRegistrada) {
             mensajeError.innerText = 'Por favor, ingrese un correo electrónico y una contraseña válidos.';
-        } else if (!correoValido) {
+        } else if (!correoValido || !correoRegistrado) {
             mensajeError.innerText = 'Por favor, ingrese un correo electrónico válido.';
         } else {
             mensajeError.innerText = 'Por favor, ingrese una contraseña válida.';

@@ -8,7 +8,8 @@ function validarFormulario() {
 
     // Aquí iría tu lógica de validación, por ejemplo:
     if (correoValido && contraseñaValida) {
-        // Si la validación es exitosa, redirigimos a la página de inicio
+        localStorage.setItem('correo', correo);
+        localStorage.setItem('contraseña', contraseña);
         window.location.href = 'html/inicio.html';
     } else {
         // Mostrar mensaje de error según la situación
@@ -36,17 +37,6 @@ function validarFormulario() {
     }
 }
 
-function guardarDatos() {
-    var correo = document.getElementById('correo').value;
-    var contraseña = document.getElementById('contraseña').value;
-
-    // Guardar datos en el almacenamiento local del navegador
-    localStorage.setItem('correo', correo);
-    localStorage.setItem('contraseña', contraseña);
-
-    // Redireccionar a la página de inicio de sesión
-    window.location.href = 'html/inicio.html';
-}
 
 
 function validarCorreo(correo) {
