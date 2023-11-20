@@ -26,3 +26,31 @@ document.querySelectorAll(".enlaces-header")[0].addEventListener("click", functi
     enlaces_header.classList.toggle("hamburgueropen");
     document.querySelectorAll(" .hamburguer")[0].style.color = "#000";
 });
+
+
+/* #########################33 codigo de notificacion  ######################3*/
+
+
+
+function mostrarNotificacion() {
+    document.getElementById("notificacion").style.display = "block";
+}
+
+// Función para cerrar la notificación
+function cerrarNotificacion() {
+    document.getElementById("notificacion").style.display = "none";
+}
+
+// Asigna los eventos a los botones de "Adoptar"
+var botonesAdoptar = document.querySelectorAll(".boton a");
+botonesAdoptar.forEach(function(boton) {
+    boton.addEventListener("click", function(event) {
+        event.preventDefault(); 
+        mostrarNotificacion();
+    });
+});
+
+
+document.getElementById("cerrarNotificacion").addEventListener("click", function() {
+    cerrarNotificacion();
+});

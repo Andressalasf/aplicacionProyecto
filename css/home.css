@@ -108,6 +108,7 @@ nav{
     font-weight: 20px;
     width: 50%;
     background-color:#FF0000 ;
+    margin-bottom: 15px;
 }
 
 .enlaces-header .logo img{
@@ -246,6 +247,37 @@ nav{
     font-size: larger;
     font-weight: 300;
 }
+
+
+/* ############33 section 3 ################## */
+
+.contenedor-section3{
+    width: 100%;
+    height: 500px;
+ }
+ 
+ .contenedor-section3 .contenido-section3{
+     max-width: 360px;
+    height: 100%;
+     background-color:#524643 ;
+     border-radius: 10px;
+     margin: 0 auto;
+     margin-top: 12px;
+     text-align: center;
+ }
+
+ .contenido-section3 .img-section3 img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+ }
+
+ .contenido-section3 p{
+    color: #F3F1EE;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+ }
 
 
 /* ############## footer ################### */

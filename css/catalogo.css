@@ -124,6 +124,7 @@ nav{
     font-weight: 20px;
     width: 50%;
     background-color:#FF0000 ;
+    margin-bottom: 15px;
 }
 
 .enlaces-header .logo img{
@@ -319,6 +320,75 @@ nav{
     margin-bottom: 8px;
 }
 
+
+/* notificacio proceso de adopcion */
+
+.notificacion {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    background-color: #F17E3D;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contenedor-noti{
+    display: flex;
+    flex-direction: column;
+}
+
+.notificacion .header-notificacion{
+    width: 100%;
+    height: 50px;
+    background-color: #524643;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+ .header-notificacion #cerrarNotificacion{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: right 8px; ;
+}
+
+.header-notificacion p{
+    color: #F3F1EE;
+}
+
+.notificacion .info-noti{
+    margin-top: 20px;
+    
+}
+
+.notificacion .info-noti p{
+    color: #747371;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.notificacion .info-noti a{
+    width: 50%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #F3F1EE;
+    background-color: #524643;
+    padding: 8px 10px;
+    border-radius: 20px;
+   
+    
+    
+    
+}
 
 
 

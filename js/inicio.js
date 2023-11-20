@@ -1,14 +1,15 @@
 
 function validarFormulario() {
+    
     const correo = document.getElementById('correo').value;
     const contraseña = document.getElementById('contraseña').value;
 
     const correoValido = validarCorreo(correo);
     const contraseñaValida = validarContraseña(contraseña);
 
-    // Aquí iría tu lógica de validación, por ejemplo:
+    
     if (correoValido && contraseñaValida) {
-        // Si la validación es exitosa, redirigimos a la página de inicio
+        
         window.location.href = 'home.html';
     } else {
         // Mostrar mensaje de error según la situación
@@ -56,3 +57,4 @@ function validarContraseña(contraseña) {
     );
 }
   
+

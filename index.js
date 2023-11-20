@@ -36,6 +36,18 @@ function validarFormulario() {
     }
 }
 
+function guardarDatos() {
+    var correo = document.getElementById('correo').value;
+    var contraseña = document.getElementById('contraseña').value;
+
+    // Guardar datos en el almacenamiento local del navegador
+    localStorage.setItem('correo', correo);
+    localStorage.setItem('contraseña', contraseña);
+
+    // Redireccionar a la página de inicio de sesión
+    window.location.href = 'html/inicio.html';
+}
+
 
 function validarCorreo(correo) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
