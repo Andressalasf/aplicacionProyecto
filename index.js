@@ -20,7 +20,7 @@ function validarFormulario() {
         } else if (!correoValido) {
             mensajeError.innerText = 'Por favor, ingrese un correo electrónico válido.';
         } else {
-            mensajeError.innerText = 'Por favor, ingrese una contraseña válida.';
+            mensajeError.innerText = 'La contraseña debe ir asi: Ejemplosimple12@, con longitud mayor o igual a 8.';
         }
 
         // Mostrar el mensaje de error
@@ -57,6 +57,9 @@ function validarContraseña(contraseña) {
       contieneMinúscula
     );
 }
+
+/* ###############  mostrar contraseña ###############*/
+
   
 
 

@@ -361,6 +361,11 @@ nav{
     border: none;
     cursor: pointer;
     margin: right 8px; ;
+    font-size: 15px;
+}
+
+.header-notificacion #cerrarNotificacion i{
+    font-size: 20px;
 }
 
 .header-notificacion p{
@@ -398,6 +403,14 @@ nav{
 
 
 @media (min-width:700px) {
+
+    /* ########## menu desplegable ########### */
+
+    .nav .enlaces-header a{
+       
+        width: 30%;
+        
+    }
     
     /* ########## SECTION 1 Y 2 ################# */
 
