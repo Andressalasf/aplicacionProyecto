@@ -90,3 +90,10 @@ img{
     border-bottom: medium solid #747371;
     
 }
+
+#mensaje-error{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #747371;
+}

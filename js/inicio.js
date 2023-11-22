@@ -12,8 +12,10 @@ function validarFormulario() {
 
     if (correo === correoRegistrado && contraseña === contraseñaRegistrada && correoValido && contraseñaValida) {
         // Si los datos coinciden, redirigir a la página de inicio
+        mensajeError.innerText = 'Has iniciado sesion correctamente';
+        mensajeError.style.backgroundColor = 'green';
         window.location.href = 'home.html';
-        alert('¡Inicio de sesión exitoso!');
+       
     } else {
         // Mostrar mensaje de error según la situación
         var mensajeError = document.getElementById('mensaje-error');
@@ -40,12 +42,14 @@ function validarFormulario() {
     }
 }
 
+//Validación del correo//
 
 function validarCorreo(correo) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(correo);
 }
 
+//Validacion de la contraseña//
 
 function validarContraseña(contraseña) {
     const longitudMínima = 8;

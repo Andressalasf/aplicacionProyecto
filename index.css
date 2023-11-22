@@ -6,8 +6,6 @@
     text-decoration: none;                       
 }
 body{
-/* background: rgb(255,0,0); */
-/* background: linear-gradient(90deg, rgba(255,0,0,1) 1%, rgba(241,126,61,1) 56%); */
 background-color:#524643 ;
 }
 
@@ -90,6 +88,15 @@ img{
     border-bottom: medium solid #747371;
     
 }
+
+#mensaje-error{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #747371;
+}
+
+
 
 
 

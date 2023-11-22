@@ -6,7 +6,8 @@ function validarFormulario() {
     const correoValido = validarCorreo(correo);
     const contraseñaValida = validarContraseña(contraseña);
 
-    // Aquí iría tu lógica de validación, por ejemplo:
+    // Logica de validacion //
+
     if (correoValido && contraseñaValida) {
         localStorage.setItem('correo', correo);
         localStorage.setItem('contraseña', contraseña);
@@ -38,12 +39,14 @@ function validarFormulario() {
 }
 
 
+//Validación del correo//
 
 function validarCorreo(correo) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(correo);
 }
 
+//Validacion de la contraseña//
 
 function validarContraseña(contraseña) {
     const longitudMínima = 8;
@@ -58,7 +61,6 @@ function validarContraseña(contraseña) {
     );
 }
 
-/* ###############  mostrar contraseña ###############*/
 
   
 
