@@ -12,7 +12,7 @@ function validarFormulario() {
 
     if (correo === correoRegistrado && contraseña === contraseñaRegistrada && correoValido && contraseñaValida) {
         // Si los datos coinciden, redirigir a la página de inicio
-        window.location.href = 'home.html';
+        window.location.href = '../html/home.html';
         alert('¡Inicio de sesión exitoso!');
     } else {
         // Mostrar mensaje de error según la situación
